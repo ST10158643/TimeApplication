@@ -1,0 +1,46 @@
+﻿<Window x:Class="TimeApplication.SemesterData"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TimeApplication"
+        mc:Ignorable="d"
+        Title="Time Application" Height="450" Width="789">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StylePROG.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+
+        <Image Stretch="UniformToFill">
+            <Image.Source>
+                <BitmapImage UriSource="/TimeApplication;component//2.jpg"/>
+            </Image.Source>
+        </Image>
+
+        <StackPanel  Orientation="Vertical" Margin="-141,107,59,2">
+            <TextBlock Text="Weeks Left in Semster"  Width="170" Margin="5,8,5,0" Height="20" Style="{StaticResource RoundedTextBlockStyle}"/>
+            <StackPanel  Orientation="Horizontal"  Margin="230,3,-4,0" Width="422">
+                <TextBox x:Name="weeksLeft" MaxHeight="50"  Height ="30" MaxWidth="200" Width="170" VerticalAlignment="Top"  Margin="5,6,0,0" Style="{StaticResource RoundedTextBoxStyle}"/>
+                <TextBlock x:Name="weeksError" Style="{StaticResource ErrorMessageStyle}" Text="TextBlock"/>
+            </StackPanel>
+
+            <TextBlock Text="Select Semster Start Date" Width="170" Margin="5,8,5,0" Style="{StaticResource RoundedTextBlockStyle}"/>
+            <StackPanel  Orientation="Horizontal"  Margin="230,3,-4,0" Width="422">
+                <DatePicker x:Name="startDate" MaxHeight="50" Height="30" MaxWidth="200" Width="170" VerticalAlignment="Top" Margin="5,6,0,0" FontSize="18" Foreground="#FF1A2170" Background="White" />
+                <TextBlock x:Name="dateError" Style="{StaticResource ErrorMessageStyle}" Text="TextBlock"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel  Orientation="Vertical" Margin="427,263,154,88">
+            <Button x:Name="enterButton" Style="{StaticResource RoundedButtonStyle}" MaxHeight="50" Height ="30" MaxWidth="200" Width="180" Content="Submit" Click="EnterButton"/>
+        </StackPanel>
+
+        <TextBlock  HorizontalAlignment="Center" Margin="0,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="435" Foreground="#FF2A3086" FontSize="36" FontFamily="Segoe UI Black" Text="Set Semester"/>
+
+    </Grid>
+</Window>
