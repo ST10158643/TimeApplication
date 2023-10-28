@@ -36,7 +36,7 @@ namespace TimeApplication
         // Event handler for nextButton_Click event
         private void nextButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!skip)
+            if (skip)
             {
                 // Create a new SemesterData instance with moduleList
                 SemesterData sem = new SemesterData(moduleList);
