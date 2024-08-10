@@ -1,4 +1,4 @@
-# Part2
+# Time Study WPF App 
 
 ## Overview
 
@@ -19,6 +19,11 @@ To install the application, follow these steps:
 3. Open the "Hannah_Ruth_Michaelson__ST10158643_PROG_6212_Part_2.sln" file with VisualStudio.
 4. Build the solution by pressing F6 or selecting "Build Solution" from the "Build" menu.
 5. Run the application by pressing F5 or selecting "Start Debugging" from the "Debug" menu.
+
+
+## UML
+![image](https://github.com/user-attachments/assets/3aaa2cd1-e38c-4fb3-b1ff-9c58b17b4282)
+
 
 ## Usage
 
